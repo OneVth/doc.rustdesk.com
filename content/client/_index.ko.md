@@ -42,7 +42,7 @@ RustDesk가 실행되도록 허용하세요.
 
 ### Linux
 
-다양한 리눅스 배포판별 설치 방법은 아래를 참조하세요. (설치 프로그램은 GitHub에 있거나 배포판의 저장소에서 제공됩니다.)
+다양한 Linux 배포판별 설치 방법은 아래를 참조하세요. (설치 프로그램은 GitHub에 있거나 배포판의 저장소에서 제공됩니다.)
 
 #### Debian 파생판
 
@@ -92,7 +92,7 @@ NixOS에서 시스템 전체를 설치하려면 `configuration.nix`를 편집한
   ];
 ```
 
-### 안드로이드
+### Android
 GitHub에서 apk를 설치하세요. 자세한 정보는 [Android page](https://rustdesk.com/docs/en/client/android/)에서 확인할 수 있습니다.
 
 ### iOS(iPhone, iPad)

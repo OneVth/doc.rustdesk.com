@@ -1,5 +1,5 @@
 ---
-title: 애저
+title: Azure
 weight: 16
 description: "RustDesk 서버 프로용 OpenID Connect 제공자로 Microsoft Entra ID(Azure)를 구성하십시오. Azure Portal에서 앱 등록 및 OIDC 설정 단계를 따르십시오."
 keywords: ["rustdesk azure oidc", "rustdesk entra id", "rustdesk azure sso", "rustdesk oidc azure", "rustdesk server pro azure"]
@@ -22,12 +22,12 @@ keywords: ["rustdesk azure oidc", "rustdesk entra id", "rustdesk azure sso", "ru
 
 ## RustDesk Pro에 입력해야 하는 Azure 값은 무엇인가요?
 
-| RustDesk Pro field | Azure source |
+| RustDesk Pro 필드 | Azure 소스 |
 | --- | --- |
-| Callback URL | Copy from the RustDesk Pro OIDC settings page |
-| Client ID | `Application (client) ID` in the Azure app overview |
-| Client secret | Secret `Value` created under `Certificates & secrets` |
-| Issuer | `https://login.microsoftonline.com/<Directory (tenant) ID>/v2.0` |
+| 콜백 URL | RustDesk Pro OIDC 설정 페이지에서 복사 |
+| 클라이언트 ID | Azure 앱 개요의 `Application (client) ID` |
+| 클라이언트 비밀번호 | `Certificates & secrets` 아래에 생성된 Secret `Value` |
+| 발급자 | `https://login.microsoftonline.com/<Directory (tenant) ID>/v2.0` |
 
 ## 동영상 자습서
 

@@ -1,5 +1,5 @@
 ---
-title: 윈도우
+title: Windows
 weight: 20
 description: "Windows에서 MSVC, Rust, vcpkg, Sciter 및 LLVM을 사용해 RustDesk를 빌드하십시오. 이 가이드는 데스크톱 앱을 소스에서 컴파일하기 전에 필요한 툴체인 설정을 다룹니다."
 keywords: ["build rustdesk windows", "rustdesk windows build", "rustdesk vcpkg windows", "rustdesk sciter dll", "rustdesk llvm libclang"]

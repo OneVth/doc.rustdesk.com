@@ -1,5 +1,5 @@
 ---
-title: 리눅스
+title: Linux
 weight: 10
 description: "필요한 시스템 패키지, vcpkg 종속성 및 Rust 툴체인을 사용해 Linux에서 RustDesk를 빌드하십시오. cargo를 실행하기 전에 Ubuntu, Fedora 또는 Arch 기반 설정 단계를 따르십시오."
 keywords: ["build rustdesk linux", "rustdesk linux build", "rustdesk vcpkg linux", "rustdesk cargo run linux", "rustdesk ubuntu build"]

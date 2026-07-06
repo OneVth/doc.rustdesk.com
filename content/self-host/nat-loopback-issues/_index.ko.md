@@ -132,7 +132,7 @@ C:\Windows\system32\drivers\etc\hosts
 sudo vim /etc/hosts
 ```
 
-#### 리눅스
+#### Linux
 
 ```text
 /etc/hosts

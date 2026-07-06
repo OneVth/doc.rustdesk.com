@@ -23,11 +23,11 @@ keywords: ["rustdesk strategy", "rustdesk policy management", "rustdesk bulk set
 
 ## 어떤 전략 할당이 우선순위를 갖나요?
 
-| Strategy type | Priority |
+| 전략 유형 | 우선순위 |
 | --- | --- |
-| Device Strategy | Highest |
-| User Strategy | Middle |
-| Device Group Strategy | Lowest |
+| 장치 전략 | 최고 |
+| 사용자 전략 | 중간 |
+| 장치 그룹 전략 | 가장 낮음 |
 
 ## 전략 생성
 

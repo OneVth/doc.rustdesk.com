@@ -1,24 +1,24 @@
 ---
-title: 안드로이드
+title: Android
 description: "Android에서 RustDesk를 사용하여 원격 제어, 파일 전송, ID 및 릴레이 서버 설정, 화면 공유를 수행하세요. 어떤 권한이 필요한지와 Android 서비스를 시작하는 방법을 알아보세요."
 keywords: ["rustdesk android", "rustdesk android remote control", "rustdesk android file transfer", "rustdesk android screen share", "rustdesk android id relay server", "rustdesk android permissions"]
 weight: 4
 ---
 
-이 안드로이드 가이드를 사용하여 원격 장치를 제어하고, 파일을 전송하며, ID 및 릴레이 서버를 구성하고, 안드로이드 휴대폰의 화면이나 파일 시스템을 공유하십시오.
+이 Android 가이드를 사용하여 원격 장치를 제어하고, 파일을 전송하며, ID 및 릴레이 서버를 구성하고, Android 휴대폰의 화면이나 파일 시스템을 공유하십시오.
 
 ## 원격 제어
 
 홈 페이지에서 원격 장치의 ID를 입력하거나 이전 기록된 장치를 선택하여 확인하십시오.
 확인이 성공한 후에는 원격 장치를 제어할 수 있습니다.
 
-| Home | Successfully connected |
+| 홈 | 성공적으로 연결됨 |
 | --- | --- |
 | ![](/docs/en/client/android/images/connection_home_en.jpg?width=300px) | ![](/docs/en/client/android/images/connection_en.jpg?width=300px) |
 
 입력 제어는 `Mouse mode`와 `Touch mode`의 두 가지 모드를 제공하며, 하단 도구모음에서 전환할 수 있습니다.
 
-| Mouse settings | Mode selection |
+| 마우스 설정 | 모드 선택 |
 | --- | --- |
 | ![](/docs/en/client/android/images/touch_mode_icon_en.png?width=300px) | ![](/docs/en/client/android/images/touch_mode_en.jpg?width=300px) |
 
@@ -34,7 +34,7 @@ weight: 4
 
 오른쪽 메뉴를 길게 누르거나 탭하여 `File Transfer`를 선택하세요.
 
-| Home | Successfully connected |
+| 홈 | 성공적으로 연결됨 |
 | --- | --- |
 | ![](/docs/en/client/android/images/connection_home_file_en.jpg?width=300px) | ![](/docs/en/client/android/images/file_connection_en.jpg?width=300px) |
 
@@ -50,7 +50,7 @@ weight: 4
 2. 파일을 선택한 후 `Local` / `Remote` 페이지로 전환하세요. 전환한 후 화면 하단에 `Paste here?` 프롬프트가 표시됩니다.
 3. 그림의 붙여넣기 파일 아이콘을 클릭하여 선택된 항목을 대상 디렉터리로 전송하세요.
 
-| Multi-Select Mode | File Paste |
+| 다중 선택 모드 | 파일 붙여넣기 |
 | --- | --- |
 | ![](/docs/en/client/android/images/file_multi_select_en.jpg?width=300px) | ![](/docs/en/client/android/images/file_copy_en.jpg?width=300px) |
 
@@ -68,16 +68,16 @@ config={"host": "xxx", "key": "xxx"}
 
 그런 다음 [Online QR Code Generator](https://www.qr-code-generator.com/)로 이동하여 위의 코드를 붙여넣으세요.
 
-아래 그림은 안드로이드의 스크린샷입니다. iOS인 경우, 홈 페이지의 오른쪽 상단 메뉴를 확인해 주세요.
+아래 그림은 Android의 스크린샷입니다. iOS인 경우, 홈 페이지의 오른쪽 상단 메뉴를 확인해 주세요.
 
 ![](/docs/en/client/android/images/id_setting_en.jpg?width=300px)
 
-## 안드로이드 휴대폰의 화면/파일 공유하기
+## Android 휴대폰의 화면/파일 공유하기
 
-버전 1.1.9부터 안드로이드 클라이언트는 휴대폰 화면 공유 및 휴대폰 파일 시스템 공유 기능을 추가했습니다.
+버전 1.1.9부터 Android 클라이언트는 휴대폰 화면 공유 및 휴대폰 파일 시스템 공유 기능을 추가했습니다.
 
-- 화면 공유를 위해서는 안드로이드 6 이상이 필요합니다.
-- 휴대폰 시스템 내부 오디오를 공유하려면 안드로이드 10 이상이 필요합니다.
+- 화면 공유를 위해서는 Android 6 이상이 필요합니다.
+- 휴대폰 시스템 내부 오디오를 공유하려면 Android 10 이상이 필요합니다.
 - iOS는 아직 화면 공유를 지원하지 않습니다.
 
 ### 권한 요청 및 서비스 시작
@@ -102,13 +102,13 @@ config={"host": "xxx", "key": "xxx"}
 
 ### 특별 권한 요청 - 파일
 
-| Requesting Android file permissions will automatically jump to the system settings page |
+| Android 파일 권한 요청 시 자동으로 시스템 설정 페이지로 이동합니다 |
 | :---: |
 | ![](/docs/en/client/android/images/get_file_en.jpg?width=300px) |
 
 ### 특별 권한 요청 - 마우스 입력
 
-| Step 1: Find "Installed Services" | Step 2: Start RustDesk Input |
+| 1단계: 설치된 서비스 찾기 | 2단계: RustDesk 입력 시작 |
 | --- | --- |
 | ![](/docs/en/client/android/images/get_input1_en.jpg?width=300px) | ![](/docs/en/client/android/images/get_input2_en.jpg?width=300px) |
 
@@ -131,7 +131,7 @@ config={"host": "xxx", "key": "xxx"}
 
 서비스가 시작된 후, 이 기기에 고유한 ID와 임의의 비밀번호가 자동으로 생성됩니다. 다른 기기들은 ID와 비밀번호를 통해 휴대폰을 제어하거나, 새로운 요청이 수신될 때 수동으로 확인할 수 있습니다.
 
-| Before starting the service | After starting the service |
+| 서비스 시작 전 | 서비스 시작 후 |
 | --- | --- |
 | ![](/docs/en/client/android/images/server_off_en.jpg?width=300px) | ![](/docs/en/client/android/images/server_on_en.jpg?width=300px) |
 
@@ -147,6 +147,6 @@ config={"host": "xxx", "key": "xxx"}
 
 #### 모바일 터미널
 
-| You can stop the service or close the specified connection at any time | You can receive or initiate chats |
+| 언제든지 서비스를 중지하거나 지정된 연결을 닫을 수 있습니다 | 채팅을 받거나 시작할 수 있습니다 |
 | --- | --- |
 | ![](/docs/en/client/android/images/server_on_en.jpg?width=300px) | ![](/docs/en/client/android/images/android_server2_en.jpg?width=300px) |

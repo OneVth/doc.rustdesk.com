@@ -17,11 +17,11 @@ keywords: ["build rustdesk", "rustdesk source build", "rustdesk packaging", "rus
 
 ## 어떤 빌드 가이드를 선택해야 하나요?
 
-| Platform | Guide |
+| 플랫폼 | 가이드 |
 | --- | --- |
 | Linux | [Linux](/docs/ko/dev/build/linux/) |
 | Windows | [Windows](/docs/ko/dev/build/windows/) |
 | macOS | [macOS](/docs/ko/dev/build/osx/) |
-| Windows troubleshooting | [FAQ for Windows](/docs/ko/dev/build/faq/) |
+| Windows 문제 해결 | [FAQ for Windows](/docs/ko/dev/build/faq/) |
 
 {{% children depth="3" showhidden="true" %}}

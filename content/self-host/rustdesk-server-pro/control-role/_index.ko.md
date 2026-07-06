@@ -53,24 +53,24 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 권한은 세션 단위로 계산됩니다:
 
-| Control Permission | Local Settings | Result |
+| 제어 권한 | 로컬 설정 | 결과 |
 |---|---|---|
-| Enable | Enable | Enable |
-| Enable | Disable | **Enable** |
-| Disable | Enable | **Disable** |
-| Disable | Disable | Disable |
-| Use Client Settings | Enable | Enable |
-| Use Client Settings | Disable | Disable |
+| 활성화 | 활성화 | 활성화 |
+| 활성화 | 비활성화 | **활성화** |
+| 비활성화 | 활성화 | **비활성화** |
+| 비활성화 | 비활성화 | 비활성화 |
+| 클라이언트 설정 사용 | 활성화 | 활성화 |
+| 클라이언트 설정 사용 | 비활성화 | 비활성화 |
 
 **특수 사례: 원격 구성 수정**
 
 여러 제어 사용자가 동일한 장치에 연결되어 있을 때, '원격 구성 수정' 권한은 모든 연결을 통합하여 계산됩니다:
 
-| All Connections' Control Permission | Result |
+| 모든 연결의 제어 권한 | 결과 |
 |---|---|
-| Any Disable | **Disable** |
-| No Disable, Any Enable | **Enable** |
-| All Use Client Settings | Use local setting |
+| 아무거나 비활성화 | **비활성화** |
+| 비활성화 없음, 아무거나 활성화 | **활성화** |
+| 모두 클라이언트 설정 사용 | 로컬 설정 사용 |
 
 ### 적용되는 역할
 
@@ -83,14 +83,14 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 상태에 따라 적용되는 제어 역할은 제어 사용자의 로그인 상태와 역할 할당에 따라 다릅니다:
 
-| Controlling User Status | Assigned Role | Which Role / Role Status | Applied Control Role |
+| 사용자 상태 제어 | 할당된 역할 | 어떤 역할 / 역할 상태 | 적용된 제어 역할 |
 |---|---|---|---|
-| Not logged in | - | Not Logged / Enabled | Not Logged |
-| Not logged in | - | Not Logged / Disabled | - |
-| Logged in | Has assigned role | Assigned role / Enabled | Assigned role |
-| Logged in | Has assigned role | Assigned role / Disabled | - |
-| Logged in | No assigned role | Default / Enabled | Default |
-| Logged in | No assigned role | Default / Disabled | - |
+| 로그인하지 않음 | - | 로그인 안 함 / 활성화됨 | 로그인 안 함 |
+| 로그인하지 않음 | - | 로그인 안 함 / 비활성화됨 | - |
+| 로그인함 | 할당된 역할 있음 | 할당된 역할 / 활성화됨 | 할당된 역할 |
+| 로그인함 | 할당된 역할 있음 | 할당된 역할 / 비활성화됨 | - |
+| 로그인함 | 할당된 역할 없음 | 기본값 / 활성화됨 | 기본값 |
+| 로그인함 | 할당된 역할 없음 | 기본값 / 비활성화됨 | - |
 
 ## 사용 가능한 권한
 

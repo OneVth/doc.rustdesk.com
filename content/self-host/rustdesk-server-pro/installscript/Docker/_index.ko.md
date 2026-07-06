@@ -9,7 +9,7 @@ keywords: ["rustdesk server pro docker", "rustdesk pro docker compose", "rustdes
 
 ## RustDesk Server Pro의 권장 Docker 설정은 무엇인가요?
 
-`network_mode: "host"`를 사용한 Docker Compose는 대부분의 리눅스 기반 RustDesk Server Pro 배포에 권장되는 설정입니다. 이 방법은 `hbbs`와 `hbbr`를 하나의 재현 가능한 구성으로 함께 유지하며, 호스트 네트워킹을 사용하지 않을 경우 발생할 수 있는 라이선스 문제를 피할 수 있습니다.
+`network_mode: "host"`를 사용한 Docker Compose는 대부분의 Linux 기반 RustDesk Server Pro 배포에 권장되는 설정입니다. 이 방법은 `hbbs`와 `hbbr`를 하나의 재현 가능한 구성으로 함께 유지하며, 호스트 네트워킹을 사용하지 않을 경우 발생할 수 있는 라이선스 문제를 피할 수 있습니다.
 
 ## RustDesk Server Pro Docker 체크리스트
 

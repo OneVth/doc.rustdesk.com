@@ -1,5 +1,5 @@
 ---
-title: 시놀로지
+title: Synology
 weight: 22
 description: "Synology NAS에 RustDesk 서버 OSS를 셀프호스팅하세요. DSM 6 또는 DSM 7.2 컨테이너 관리자를 위한 올바른 가이드를 선택하고, 지원되는 Synology 모델에서 Docker를 사용해 배포하세요."
 keywords: ["rustdesk synology", "rustdesk nas", "rustdesk synology docker", "rustdesk dsm 7.2", "rustdesk synology container manager"]

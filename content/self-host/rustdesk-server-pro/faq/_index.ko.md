@@ -11,22 +11,22 @@ weight: 600
 
 ## 각 일반 작업에 어떤 페이지를 사용해야 하나요?
 
-| Task | Best page |
+| 작업 | 최적의 페이지 |
 | --- | --- |
-| Install a new Pro server | [Installation](/docs/ko/self-host/rustdesk-server-pro/installscript/) |
-| Install Pro with Docker | [Docker install](/docs/ko/self-host/rustdesk-server-pro/installscript/docker/) |
-| Convert from OSS to Pro | [Installation](/docs/ko/self-host/rustdesk-server-pro/installscript/#convert-from-open-source) |
-| Buy or move a license | [License](/docs/ko/self-host/rustdesk-server-pro/license/) |
-| Set up email notifications | [SMTP](/docs/ko/self-host/rustdesk-server-pro/smtp/) |
-| Configure SSO or identity login | [OIDC](/docs/ko/self-host/rustdesk-server-pro/oidc/) or [LDAP](/docs/ko/self-host/rustdesk-server-pro/ldap/) |
-| Deploy clients at scale | [Client Deployment](/docs/ko/self-host/client-deployment/) |
+| 새 Pro 서버 설치하기 | [Installation](/docs/ko/self-host/rustdesk-server-pro/installscript/) |
+| Docker로 Pro 설치하기 | [Docker install](/docs/ko/self-host/rustdesk-server-pro/installscript/docker/) |
+| OSS에서 Pro로 변환하기 | [Installation](/docs/ko/self-host/rustdesk-server-pro/installscript/#convert-from-open-source) |
+| 라이선스 구매 또는 이전하기 | [License](/docs/ko/self-host/rustdesk-server-pro/license/) |
+| 이메일 알림 설정하기 | [SMTP](/docs/ko/self-host/rustdesk-server-pro/smtp/) |
+| SSO 또는 ID 로그인 구성하기 | [OIDC](/docs/ko/self-host/rustdesk-server-pro/oidc/) 또는 [LDAP](/docs/ko/self-host/rustdesk-server-pro/ldap/) |
+| 대규모 클라이언트 배포하기 | [Client Deployment](/docs/ko/self-host/client-deployment/) |
 
 ## 간편 설치 스크립트로 설치하려면 어떻게 해야 하나요?
 1. [https://rustdesk.com/pricing.html](https://rustdesk.com/pricing.html)로부터 라이선스를 받고, 자세한 내용은 [license](https://rustdesk.com/docs/en/self-host/rustdesk-server-pro/license/) 페이지를 확인하세요.
-2. VPS, 베어 메탈 또는 리눅스 VM을 생성하세요.
+2. VPS, 베어 메탈 또는 Linux VM을 생성하세요.
 3. DNS와 SSL을 사용하려면 DNS 이름, 예를 들어 `rustdesk.yourdomain.com`를 생성하세요.
 4. [This page](https://rustdesk.com/docs/en/self-host/rustdesk-server-pro/installscript/#install)를 실행하세요.
-5. 명령어를 복사하여 리눅스 터미널에 붙여넣으세요.
+5. 명령어를 복사하여 Linux 터미널에 붙여넣으세요.
 6. 안내에 따라 설치를 진행하세요.
 7. 설치가 완료되면 `https://rustdesk.yourdomain.com` 또는 `http://youripaddress:21114`를 실행하세요.
 8. 사용자 이름 `admin`와 비밀번호 `test1234`로 로그인하세요.
@@ -38,7 +38,7 @@ weight: 600
 3. 귀하의 RustDesk 서버에 로그인하세요.
 4. 이미 DNS를 사용하지 않았고 SSL을 사용하고 싶다면 DNS 이름을 생성하세요. 예: `rustdesk.yourdomain.com`.
 5. [This page](https://rustdesk.com/docs/en/self-host/rustdesk-server-pro/installscript/#convert-from-open-source).
-6. 명령어를 복사하여 리눅스 터미널에 붙여넣으세요.
+6. 명령어를 복사하여 Linux 터미널에 붙여넣으세요.
 7. 설치 과정 중 안내에 따라 진행하세요.
 8. 설치가 완료되면 `https://rustdesk.yourdomain.com` 또는 `http://youripaddress:21114`로 이동하세요.
 9. 사용자 이름 `admin`와 비밀번호 `test1234`로 로그인하세요.
@@ -148,7 +148,7 @@ rustdesk/makepkg               latest    86a981e2e18f   2 months ago   2.23GB
 ## 내 VPS에서 이메일이 작동하지 않습니다
 많은 VPS 제공업체가 포트 465와 25를 차단합니다.
 
-간단한 확인 방법은 텔넷을 사용하는 것입니다. 리눅스 터미널에서 `telnet your.mailserver.com 25`를 입력하세요. 윈도우에서는 PowerShell을 사용하고 `Test-NetConnection -ComputerName your.mailserver.com -Port 25`를 입력하세요.
+간단한 확인 방법은 텔넷을 사용하는 것입니다. Linux 터미널에서 `telnet your.mailserver.com 25`를 입력하세요. Windows에서는 PowerShell을 사용하고 `Test-NetConnection -ComputerName your.mailserver.com -Port 25`를 입력하세요.
 
 귀하의 메일 서버가 포트 25를 사용하지 않을 수 있습니다. 올바른 포트를 사용하고 있는지 확인해 주세요.
 
@@ -175,7 +175,7 @@ rustdesk/makepkg               latest    86a981e2e18f   2 months ago   2.23GB
 2. 웹 콘솔의 메인 페이지에서 `Windows EXE`를 클릭하세요.
 3. 호스트와 API를 입력하세요(설정과 다른 경우).
 4. `Submit`를 클릭하세요.
-5. 안드로이드에서 QR 코드를 스캔하고, 생성된 이름으로 exe 파일의 이름을 바꾸세요.
+5. Android에서 QR 코드를 스캔하고, 생성된 이름으로 exe 파일의 이름을 바꾸세요.
 
 ## RustDesk Server Pro용 호스팅을 제공하시나요?
 [sales](mailto://sales@rustdesk.com) 팀에 연락해 주세요.

@@ -5,7 +5,7 @@ description: "라이선스를 받은 후 install.sh 스크립트를 사용하여
 keywords: ["rustdesk server pro install.sh", "rustdesk pro linux install", "rustdesk pro script install", "rustdesk self-host pro linux", "rustdesk server pro setup"]
 ---
 
-자신만의 서비스 설정을 처음부터 작성하지 않고 간단한 리눅스 기반 RustDesk Server Pro 설치를 원할 때는 `install.sh` 방법을 사용하세요.
+자신만의 서비스 설정을 처음부터 작성하지 않고 간단한 Linux 기반 RustDesk Server Pro 설치를 원할 때는 `install.sh` 방법을 사용하세요.
 
 {{% notice note %}}
 [https://rustdesk.com/pricing/](https://rustdesk.com/pricing/)에서 라이선스를 받는 것을 잊지 마세요. 더 자세한 내용은 [license](https://rustdesk.com/docs/en/self-host/rustdesk-server-pro/license/) 페이지를 확인해 주세요.
@@ -61,7 +61,7 @@ systemd 서비스가 시작되지 않으면, 아마도 SELinux와 관련이 있�
 
 ## 업그레이드
 
-위의 명령어를 복사하여 리눅스 터미널에 붙여넣어 기존 RustDesk Server Pro 설치를 업그레이드하세요. 이 명령어는 로컬에 저장하여 cron으로 예약할 수도 있습니다.
+위의 명령어를 복사하여 Linux 터미널에 붙여넣어 기존 RustDesk Server Pro 설치를 업그레이드하세요. 이 명령어는 로컬에 저장하여 cron으로 예약할 수도 있습니다.
 
 `wget -qO- https://raw.githubusercontent.com/rustdesk/rustdesk-server-pro/main/update.sh | bash`
 
@@ -78,7 +78,7 @@ systemd 서비스가 시작되지 않으면, 아마도 SELinux와 관련이 있�
 
 ## 오픈소스에서 변환하기
 
-위의 명령어를 복사하여 리눅스 터미널에 붙여넣어 RustDesk Server를 RustDesk Server Pro로 변환하세요.
+위의 명령어를 복사하여 Linux 터미널에 붙여넣어 RustDesk Server를 RustDesk Server Pro로 변환하세요.
 
 `wget -qO- https://raw.githubusercontent.com/rustdesk/rustdesk-server-pro/main/convertfromos.sh | bash`
 

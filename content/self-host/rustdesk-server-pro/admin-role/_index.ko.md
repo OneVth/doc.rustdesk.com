@@ -100,41 +100,41 @@ RustDesk 서버 프로에서 전체 관리자 권한을 부여하지 않고 부�
 
 ### 글로벌 권한
 
-| Permission | Description |
+| 권한 | 설명 |
 |------------|-------------|
-| Users-View | Read list information of all users. |
-| Users-Create | Directly create non-administrator users. |
-| Users-Invite | Invite users via email. |
-| Users-Delete | Delete any non-administrator user. Users must be disabled before they can be deleted. |
-| Users-Enable/Disable | Enable or disable any non-administrator user. |
-| Users-Edit Email | Change the email of any non-administrator user. |
-| Users-Edit Password | Change the password of any non-administrator user. |
-| Users-Edit Note | Change the note of any non-administrator user. |
-| Users-Manage 2FA | Manage login verification for any non-administrator user. Includes enable/disable 2FA enforcement, reset 2FA configuration, disable email login verification. |
-| Users-Force Logout | Force logout any non-administrator user from all devices. |
-| Users-Update Group | Change any non-admin user's group. |
-| Users-Update Strategy | Change any non-admin user's strategy. |
-| Users-Update Control Role | Change any non-admin user's control role. |
-| Devices-View | Read list information of all devices. |
-| Devices-Enable/Disable | Enable or disable any device. |
-| Devices-Delete | Delete any device. Devices must be disabled before they can be deleted. |
-| Devices-Edit Info | Edit device name, device username (system username of the device, not the RustDesk user), and note for any device. |
-| Devices-Assign to User | Assign any device to any user. |
-| Devices-Update Group | Change any device's group. |
-| Devices-Update Strategy | Change any device's strategy. |
-| User Groups-View | Read list information of all user groups. If having Users View permission, can view group members. If having Users Update Group permission, can batch update users' groups here. |
-| User Groups-Edit | Create, edit, and delete user groups, does not include updating group members. |
-| Device Groups-View | Read list information of all device groups. If having Devices View permission, can view group members. If having Devices Update Group permission, can batch update devices' groups here. |
-| Device Groups-Edit | Create, edit, and delete device groups, does not include updating group members. Includes Update Strategy permission. |
-| Device Groups-Update Strategy | Change any device group's strategy. |
-| Audit Logs-View | Read all logs. Can edit notes. Even when "Only admin can access logs" option is enabled. |
-| Audit Logs-Edit | Can disconnect any active connection. |
-| Strategies-View | Read any strategy. If having Users View, Devices View, and Device Groups View permissions, can read strategies for users, devices, and device groups. If having Users Update Strategy, Devices Update Strategy, and Device Groups Update Strategy permissions, can batch update corresponding strategies here. |
-| Strategies-Edit | Create, edit, and delete strategies, does not include updating strategies for users, devices, and device groups. |
-| Control Roles-View | Read any control role. If having Users View permission, can read control roles for users. If having Users Update Control Role permission, can batch update corresponding control roles here. |
-| Control Roles-Edit | Create, edit, and delete control roles, does not include updating control roles for users. |
-| Custom Clients-View | Read the list of custom clients. Can download compiled custom clients. Cannot read detailed configuration of custom clients. |
-| Custom Clients-Edit | Create, edit, and delete custom clients. |
+| 사용자-보기 | 모든 사용자의 목록 정보를 읽습니다. |
+| 사용자-생성 | 비관리자 사용자를 직접 생성합니다. |
+| 사용자-초대 | 이메일을 통해 사용자를 초대합니다. |
+| 사용자-삭제 | 비관리자 사용자를 삭제합니다. 사용자는 비활성화된 후에만 삭제할 수 있습니다. |
+| 사용자-활성화/비활성화 | 비관리자 사용자를 활성화하거나 비활성화합니다. |
+| 사용자-이메일 편집 | 비관리자 사용자의 이메일을 변경합니다. |
+| 사용자-비밀번호 변경 | 비관리자 사용자의 비밀번호를 변경합니다. |
+| 사용자-노트 편집 | 비관리자 사용자의 노트를 변경합니다. |
+| 사용자-2FA 관리 | 비관리자 사용자의 로그인 인증을 관리합니다. 2FA 강제 활성화/비활성화, 2FA 구성 재설정, 이메일 로그인 인증 비활성화 포함됩니다. |
+| 사용자-강제 로그아웃 | 모든 기기에서 비관리자 사용자의 로그아웃을 강제합니다. |
+| 사용자-그룹 업데이트 | 비관리자 사용자의 그룹을 변경합니다. |
+| 사용자-전략 업데이트 | 비관리자 사용자의 전략을 변경합니다. |
+| 사용자-제어 역할 업데이트 | 비관리자 사용자의 제어 역할을 변경합니다. |
+| 기기-보기 | 모든 기기의 목록 정보를 읽습니다. |
+| 기기-활성화/비활성화 | 어떤 기기도 활성화하거나 비활성화합니다. |
+| 기기-삭제 | 어떤 기기도 삭제합니다. 기기는 비활성화된 후에만 삭제할 수 있습니다. |
+| 기기-정보 편집 | 어떤 기기의 이름, 기기 사용자 이름(기기의 시스템 사용자 이름, RustDesk 사용자가 아님), 그리고 노트를 편집합니다. |
+| 기기-사용자 할당 | 어떤 기기를 어떤 사용자에게 할당합니다. |
+| 기기-그룹 업데이트 | 어떤 기기의 그룹을 변경합니다. |
+| 기기-전략 업데이트 | 어떤 기기의 전략을 변경합니다. |
+| 사용자 그룹-보기 | 모든 사용자 그룹의 목록 정보를 읽습니다. 사용자 보기 권한이 있으면 그룹 구성원을 볼 수 있습니다. 사용자 그룹 업데이트 권한이 있으면 여기서 사용자의 그룹을 일괄 업데이트할 수 있습니다. |
+| 사용자 그룹-편집 | 사용자 그룹을 생성, 편집, 삭제하며, 그룹 구성원 업데이트는 포함하지 않습니다. |
+| 기기 그룹-보기 | 모든 기기 그룹의 목록 정보를 읽습니다. 기기 보기 권한이 있으면 그룹 구성원을 볼 수 있습니다. 기기 그룹 업데이트 권한이 있으면 여기서 기기의 그룹을 일괄 업데이트할 수 있습니다. |
+| 기기 그룹-편집 | 기기 그룹을 생성, 편집, 삭제하며, 그룹 구성원 업데이트는 포함하지 않습니다. 전략 업데이트 권한도 포함됩니다. |
+| 기기 그룹-전략 업데이트 | 어떤 기기 그룹의 전략을 변경합니다. |
+| 감사 로그-보기 | 모든 로그를 읽습니다. 노트를 편집할 수 있습니다. "관리자만 로그에 접근 가능" 옵션이 활성화되어 있어도 가능합니다. |
+| 감사 로그-편집 | 어떤 활성 연결도 연결 해제할 수 있습니다. |
+| 전략-보기 | 어떤 전략도 읽습니다. 사용자 보기, 기기 보기, 기기 그룹 보기 권한이 있으면 사용자, 기기, 기기 그룹의 전략을 읽을 수 있습니다. 사용자 전략 업데이트, 기기 전략 업데이트, 기기 그룹 전략 업데이트 권한이 있으면 여기서 해당 전략을 일괄 업데이트할 수 있습니다. |
+| 전략-편집 | 전략을 생성, 편집, 삭제하며, 사용자, 기기, 기기 그룹의 전략 업데이트는 포함하지 않습니다. |
+| 제어 역할-보기 | 어떤 제어 역할도 읽습니다. 사용자 보기 권한이 있으면 사용자의 제어 역할을 읽을 수 있습니다. 사용자 제어 역할 업데이트 권한이 있으면 여기서 해당 제어 역할을 일괄 업데이트할 수 있습니다. |
+| 제어 역할-편집 | 제어 역할을 생성, 편집, 삭제하며, 사용자의 제어 역할 업데이트는 포함하지 않습니다. |
+| 사용자 지정 클라이언트-보기 | 사용자 지정 클라이언트의 목록을 읽습니다. 컴파일된 사용자 지정 클라이언트를 다운로드할 수 있습니다. 사용자 지정 클라이언트의 상세 구성은 읽을 수 없습니다. |
+| 사용자 지정 클라이언트-편집 | 사용자 지정 클라이언트를 생성, 편집, 삭제합니다.
 
 ### 개별 권한
 
@@ -150,22 +150,22 @@ RustDesk 서버 프로에서 전체 관리자 권한을 부여하지 않고 부�
 
 ### 그룹 범위 권한
 
-| Permission | Description |
+| 권한 | 설명 |
 |------------|-------------|
-| Users-View | Read list information of users within selected user groups. |
-| Users-Create | Create non-administrator users within selected user groups. |
-| Users-Invite | Invite users via email within selected user groups. |
-| Users-Delete | Delete non-administrator users within selected user groups. Users must be disabled before they can be deleted. |
-| Users-Enable/Disable | Enable or disable non-administrator users within selected user groups. |
-| Users-Edit Email | Change the email of non-administrator users within selected user groups. |
-| Users-Edit Password | Change the password of non-administrator users within selected user groups. |
-| Users-Edit Note | Change the note of non-administrator users within selected user groups. |
-| Users-Manage 2FA | Manage login verification for non-administrator users within selected user groups. Includes enable/disable 2FA enforcement, reset 2FA configuration, disable email login verification. |
-| Users-Force Logout | Force logout non-administrator users within selected user groups from all devices. |
-| Users-Update Strategy | Change the strategy of non-admin users within selected user groups. |
-| Users-Update Control Role | Change the control role of non-admin users within selected user groups. |
-| Devices-View | Read list information of devices managed by the current role. |
-| Devices-Enable/Disable | Enable or disable devices managed by the current role. |
-| Devices-Delete | Delete devices managed by the current role. Devices must be disabled before they can be deleted. |
-| Devices-Edit Info | Edit device name, device username (system username of the device, not the RustDesk user), and note for devices managed by the current role. |
-| Devices-Update Strategy | Change strategy of devices managed by the current role. |
+| 사용자-보기 | 선택된 사용자 그룹 내 사용자의 목록 정보를 읽습니다. |
+| 사용자-생성 | 선택된 사용자 그룹 내 비관리자 사용자를 생성합니다. |
+| 사용자-초대 | 선택된 사용자 그룹 내 이메일을 통해 사용자를 초대합니다. |
+| 사용자-삭제 | 선택된 사용자 그룹 내 비관리자 사용자를 삭제합니다. 사용자는 삭제되기 전에 비활성화되어야 합니다. |
+| 사용자-활성화/비활성화 | 선택된 사용자 그룹 내 비관리자 사용자를 활성화하거나 비활성화합니다. |
+| 사용자-이메일 편집 | 선택된 사용자 그룹 내 비관리자 사용자의 이메일을 변경합니다. |
+| 사용자-비밀번호 변경 | 선택된 사용자 그룹 내 비관리자 사용자의 비밀번호를 변경합니다. |
+| 사용자-노트 편집 | 선택된 사용자 그룹 내 비관리자 사용자의 노트를 변경합니다. |
+| 사용자-2FA 관리 | 선택된 사용자 그룹 내 비관리자 사용자의 로그인 인증을 관리합니다. 2FA 강제 활성화/비활성화, 2FA 구성 재설정, 이메일 로그인 인증 비활성화 포함됩니다. |
+| 사용자-강제 로그아웃 | 선택된 사용자 그룹 내 비관리자 사용자를 모든 기기에서 강제로 로그아웃시킵니다. |
+| 사용자-전략 업데이트 | 선택된 사용자 그룹 내 비관리자 사용자의 전략을 변경합니다. |
+| 사용자-제어 역할 업데이트 | 선택된 사용자 그룹 내 비관리자 사용자의 제어 역할을 변경합니다. |
+| 기기-보기 | 현재 역할이 관리하는 기기의 목록 정보를 읽습니다. |
+| 기기-활성화/비활성화 | 현재 역할이 관리하는 기기를 활성화하거나 비활성화합니다. |
+| 기기-삭제 | 현재 역할이 관리하는 기기를 삭제합니다. 기기는 삭제되기 전에 비활성화되어야 합니다. |
+| 기기-정보 편집 | 현재 역할이 관리하는 기기의 이름, 기기 사용자 이름(기기의 시스템 사용자 이름, RustDesk 사용자가 아님), 그리고 노트를 편집합니다. |
+| 기기-전략 업데이트 | 현재 역할이 관리하는 기기의 전략을 변경합니다. |

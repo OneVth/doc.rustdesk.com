@@ -11,12 +11,12 @@ RustDesk는 최소한의 구성으로 자체 호스팅과 보안을 위한 완�
 
 ## 어떤 RustDesk 경로를 선택해야 할까요?
 
-| Need | Best starting point |
+| 필요 | 최고의 시작점 |
 | --- | --- |
-| Use RustDesk as an end user or administrator | [Client](/docs/ko/client/) |
-| Self-host the free open source server | [RustDesk Server OSS](/docs/ko/self-host/rustdesk-server-oss/) |
-| Self-host with web console, SSO, and enterprise controls | [RustDesk Server Pro](/docs/ko/self-host/rustdesk-server-pro/) |
-| Build or package RustDesk from source | [Development](/docs/ko/dev/) |
+| RustDesk를 최종 사용자 또는 관리자로 사용하기 | [Client](/docs/ko/client/) |
+| 무료 오픈소스 서버를 셀프호스팅하기 | [RustDesk Server OSS](/docs/ko/self-host/rustdesk-server-oss/) |
+| 웹 콘솔, SSO 및 기업용 제어 기능과 함께 셀프호스팅하기 | [RustDesk Server Pro](/docs/ko/self-host/rustdesk-server-pro/) |
+| 소스에서 RustDesk를 빌드하거나 패키지화하기 | [Development](/docs/ko/dev/) |
 
 ## 특징
 - Windows, macOS, Linux, iOS, Android, 웹에서 작동합니다.

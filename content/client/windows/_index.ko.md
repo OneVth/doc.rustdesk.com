@@ -1,5 +1,5 @@
 ---
-title: 윈도우
+title: Windows
 description: "Windows에 RustDesk를 설치하고 배포하세요. Windows 클라이언트 설정 안내, MSI 패키징, 무인 설치 옵션 및 휴대용 권한 상승 문서를 확인하세요."
 keywords: ["rustdesk windows", "rustdesk windows install", "rustdesk msi", "rustdesk silent install", "rustdesk portable elevation", "rustdesk windows deployment"]
 weight: 4
@@ -9,11 +9,11 @@ weight: 4
 
 ## 어떤 Windows 가이드를 선택해야 하나요?
 
-| Need | Best guide |
+| 필요 | 최고의 가이드 |
 | --- | --- |
-| Standard Windows client install | [Windows client overview](/docs/ko/client/windows/) |
-| Managed deployment, silent install, or packaging | [MSI](/docs/ko/client/windows/msi/) |
-| Portable mode with elevation support | [Windows Portable Elevation](/docs/ko/client/windows/windows-portable-elevation/) |
+| 표준 Windows 클라이언트 설치 | [Windows client overview](/docs/ko/client/windows/) |
+| 관리형 배포, 무인 설치 또는 패키징 | [MSI](/docs/ko/client/windows/msi/) |
+| 권한 상승 지원 포함 휴대용 모드 | [Windows Portable Elevation](/docs/ko/client/windows/windows-portable-elevation/) |
 
 ## Windows 빠른 답변
 

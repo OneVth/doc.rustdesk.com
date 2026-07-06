@@ -62,7 +62,7 @@ chmod +x install.sh
 
 거기에서 설치 끝에 표시된 IP/DNS와 키를 메모해 두고 이를 각각 클라이언트 설정 > 네트워크 > ID/릴레이 서버 `ID server` 및 `Key` 필드에 삽입하세요. 다른 필드는 비워두세요(아래 노트 참조).
 
-### 방법 3: 데비안 배포판용 deb 파일을 사용하여 자체 서버를 systemd 서비스로 설치하기
+### 방법 3: Debian 배포판용 deb 파일을 사용하여 자체 서버를 systemd 서비스로 설치하기
 
 [Download](https://github.com/rustdesk/rustdesk-server/releases/latest) deb 파일을 직접 다운로드하여 `apt-get -f install <filename>.deb` 또는 `dpkg -i <filename>.deb`로 설치해 주세요.
 

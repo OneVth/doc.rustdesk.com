@@ -38,7 +38,7 @@ sudo docker compose up -d
 
 ## 방법 2: install.sh
 
-리눅스에 능숙하다면 아래 스크립트를 사용하십시오. 그렇지 않으면 실패할 경우 심각한 문제가 발생할 수 있으며, 왜 작동하지 않는지 파악하기 어려울 수 있습니다.
+Linux에 능숙하다면 아래 스크립트를 사용하십시오. 그렇지 않으면 실패할 경우 심각한 문제가 발생할 수 있으며, 왜 작동하지 않는지 파악하기 어려울 수 있습니다.
 
 `bash <(wget -qO- https://raw.githubusercontent.com/rustdesk/rustdesk-server-pro/main/install.sh)`
 

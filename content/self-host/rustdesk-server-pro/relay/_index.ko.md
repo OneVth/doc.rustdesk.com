@@ -38,7 +38,7 @@ keywords: ["rustdesk relay server", "rustdesk hbbr", "rustdesk geolocation relay
 
 > 개인 키 쌍 `id_ed25519`와 `id_ed25519.pub`가 필요합니다.
 
-1 - 이미 도커가 설치되어 있다면 SSH를 통해 서버에 연결하고 hbbr용 볼륨을 생성하세요.
+1 - 이미 Docker가 설치되어 있다면 SSH를 통해 서버에 연결하고 hbbr용 볼륨을 생성하세요.
 
 ```
 # docker volume create hbbr

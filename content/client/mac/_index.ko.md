@@ -31,17 +31,17 @@ macOS에서 RustDesk는 앱 설치 자체 이상의 추가 작업이 필요합�
 
 ## RustDesk 실행 허용
 
-| Unlock to change | Click on `App Store and identified developers` |
+| 변경 해제 | `App Store and identified developers` 클릭 |
 | --- | --- |
 | ![](/docs/en/client/mac/images/allow2.png) | ![](/docs/en/client/mac/images/allow.png) |
 
 ## 어떤 macOS 권한이 중요합니까?
 
-| Permission | Why it matters |
+| 권한 | 왜 중요한가요? |
 | --- | --- |
-| Accessibility | Lets RustDesk control keyboard and mouse input |
-| Screen Recording | Lets RustDesk capture the local display |
-| Input Monitoring | Needed on newer macOS versions when local input capture still fails |
+| 접근성 | RustDesk가 키보드 및 마우스 입력을 제어할 수 있도록 합니다 |
+| 녹화 | RustDesk가 로컬 디스플레이를 캡처하도록 합니다 |
+| 입력 모니터링 | 최신 macOS 버전에서는 로컬 입력 캡처가 여전히 실패하는 경우 필요합니다 |
 
 ## 권한 활성화
 
@@ -55,7 +55,7 @@ macOS 보안 정책 변경으로 인해 로컬 측에서 입력을 캡처하는 
 
 화면을 캡처하려면 RustDesk에 **접근성** 권한과 **화면 녹화** 권한을 부여해야 합니다. RustDesk가 설정 창으로 안내해 드립니다.
 
-| RustDesk window | Settings window |
+| RustDesk 창 | 설정 창 |
 | --- | --- |
 | ![](/docs/en/client/mac/images/acc.png) | ![](/docs/en/client/mac/images/acc3.png?v2) |
 
@@ -69,7 +69,7 @@ macOS 보안 정책 변경으로 인해 로컬 측에서 입력을 캡처하는 
 재부팅이 여전히 필요합니다.
 {{% /notice %}}
 
-| `-` and `+` button | Select `RustDesk` |
+| `-` 및 `+` 버튼 | `RustDesk` 선택 |
 | --- | --- |
 | ![](/docs/en/client/mac/images/acc2.png) | ![](/docs/en/client/mac/images/add.png?v2) |
 

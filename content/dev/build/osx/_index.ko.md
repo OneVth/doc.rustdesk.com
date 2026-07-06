@@ -11,11 +11,11 @@ keywords: ["build rustdesk macos", "rustdesk mac build", "rustdesk sciter mac", 
 
 ## 어떤 macOS 빌드 경로를 사용해야 하나요?
 
-| Need | Best path |
+| 필요 | 최적의 경로 |
 | --- | --- |
-| Build the traditional desktop UI | Sciter |
-| Build the newer desktop stack | Flutter |
-| Prepare shared native dependencies | Homebrew + `vcpkg` + Rust |
+| 전통적인 데스크톱 UI 구축 | Sciter |
+| 더 새로운 데스크톱 스택 구축 | Flutter |
+| 공유 네이티브 종속성 준비 | Homebrew + `vcpkg` + Rust |
 
 ## macOS 빌드 체크리스트
 

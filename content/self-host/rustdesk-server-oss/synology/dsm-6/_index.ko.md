@@ -29,13 +29,13 @@ Synology NAS가 여전히 DSM 6에 있고, 이전 버전의 Docker 패키지를 
 
 ## Docker 설치하기
 
-| Open Package Center | Install Docker |
+| 패키지 센터 열기 | Docker 설치하기 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/package-manager.png) | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/docker.png) |
 
 ## RustDesk 서버 설치하기
 
-| Search rustdesk-server in Docker's registry and install by double click | Installed rustdesk-server image, double click to create rustdesk-server container |
+| Docker의 레지스트리에서 rustdesk-server를 검색하고 더블클릭하여 설치하기 | 설치된 rustdesk-server 이미지, 더블클릭하여 rustdesk-server 컨테이너 생성 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/pull-rustdesk-server.png) | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/rustdesk-server-installed.png) |
 
@@ -54,7 +54,7 @@ Synology NAS가 여전히 DSM 6에 있고, 이전 버전의 Docker 패키지를 
 
 - 호스트 디렉터리를 `/root`에 마운트하고(예: `/home/rustdesk/`), hbbs는 이 디렉터리에 일부 파일(데이터베이스 및 `key` 파일)을 생성하며, 이 파일들은 재부팅 후에도 지속되어야 합니다.
 
-| Mount | Files generated in the host directory |
+| 마운트 | 호스트 디렉터리에 생성된 파일 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/mount.png) | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/mounted-dir.png) |
 
@@ -78,7 +78,7 @@ Synology의 OS는 Debian 기반으로, 호스트 네트워크(--net=host)가 잘
 
 ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/containers.png)
 
-| Double click on container and check log | Double confirm hbbs/hbbr using host network |
+| 컨테이너를 두 번 클릭하고 로그 확인 | 호스트 네트워크를 사용하여 hbbs/hbbr를 이중 확인 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/log.png) | ![](/docs/en/self-host/rustdesk-server-oss/synology/dsm-6/images/network-types.png) |
 

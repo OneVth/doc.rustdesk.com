@@ -29,7 +29,7 @@ RustDesk Server Pro 라이선스는 모든 릴레이 노드가 아닌 `hbbs` 서
 
 웹 콘솔(`http://<rustdesk-server-pro-ip>:21114`)에서 라이선스를 입력하거나 나중에 라이선스를 변경해야 합니다.
 
-| Set license | Change license |
+| 라이선스 설정 | 라이선스 변경 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-pro/license/images/set.png) | ![](/docs/en/self-host/rustdesk-server-pro/license/images/change.png) |
 
@@ -37,7 +37,7 @@ RustDesk Server Pro 라이선스는 모든 릴레이 노드가 아닌 `hbbs` 서
 
 라이선스 갱신/업그레이드는 아래와 같이 [self-service license portal](https://rustdesk.com/self-host/account/)를 통해 확인할 수 있으며, 위 그림과 같이 라이선스 구매 시 사용한 이메일로 로그인하십시오.
 
-| License page with renew/upgrade actions | Upgrade window |
+| 갱신/업그레이드 작업이 포함된 라이선스 페이지 | 업그레이드 창 |
 | --- | --- |
 | ![](/docs/en/self-host/rustdesk-server-pro/license/images/renew.jpg?v2) | ![](/docs/en/self-host/rustdesk-server-pro/license/images/upgrade.png) |
 

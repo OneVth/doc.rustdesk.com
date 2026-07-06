@@ -24,7 +24,7 @@ RustDesk를 셀프호스팅하면 자신의 ID와 릴레이 인프라를 제어�
 - `hbbs` - RustDesk ID(랜드버스/신호) 서버, TCP(`21114` - Pro 전용 HTTP용, `21115`, `21116`, `21118` 웹소켓용) 및 UDP(`21116`)에서 수신 대기
 - `hbbr` - RustDesk 릴레이 서버, TCP(`21117`, `21119` 웹소켓용)에서 수신 대기
 
-설치 스크립트 / 도커 컴포즈 / deb를 통해 설치할 경우, 두 서비스가 모두 설치됩니다.
+설치 스크립트 / Docker 컴포즈 / deb를 통해 설치할 경우, 두 서비스가 모두 설치됩니다.
 
 다음은 [그림](https://github.com/rustdesk/rustdesk/wiki/How-does-RustDesk-work%3F)으로 RustDesk 클라이언트가 `hbbr` / `hbbs`와 어떻게 통신하는지 보여줍니다.
 

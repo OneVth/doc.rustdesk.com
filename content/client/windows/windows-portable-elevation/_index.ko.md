@@ -38,7 +38,7 @@ RustDesk 포터블 클라이언트가 Windows에서 관리자 수준의 UI와 �
 
 제어되는 쪽에서는 연결 시 `Accept and Elevate`를 바로 클릭하거나 이미 연결된 경우 `Elevate`를 클릭할 수 있습니다.
 
-| Connecting | Connected |
+| 연결 중 | 연결됨 |
 | :---: | :---: |
 | ![](/docs/en/client/windows/windows-portable-elevation/images/cm_unauth.jpg) | ![](/docs/en/client/windows/windows-portable-elevation/images/cm_auth.jpg) |
 
@@ -46,17 +46,17 @@ RustDesk 포터블 클라이언트가 Windows에서 관리자 수준의 UI와 �
 
 동작 메뉴에서 `Request Elevation`를 선택하면 다음 대화상자가 표시됩니다. `Ask the remote user for authentication`를 선택하면 사용자 이름과 비밀번호를 입력할 필요가 없지만, 원격 컴퓨터의 사용자는 관리자 권한을 가져야 합니다. `Transmit the username and password of administrator`를 선택하면 원격 컴퓨터의 사용자는 UAC 창에서 수락하기만 하면 됩니다. 요청을 보낸 후, 상대방 사용자가 UAC 창을 수락하도록 기다려 주세요. 확인되면 성공 메시지가 표시됩니다. **두 방법 모두 제어 측에서 누군가 UAC 창을 수락해야 합니다**. 따라서 상대방에 사람이 없을 경우, 제어 측에서 권한 상승을 요청해서는 안 됩니다.
 
-| Menu | Dialog |
+| 메뉴 | 대화 |
 | :---: | :---: |
 | ![](/docs/en/client/windows/windows-portable-elevation/images/menu.png) | ![](/docs/en/client/windows/windows-portable-elevation/images/dialog.png) |
-| **Wait** | **Success** |
+| **대기** | **성공** |
 | ![](/docs/en/client/windows/windows-portable-elevation/images/wait.png) | ![](/docs/en/client/windows/windows-portable-elevation/images/success.png) |
 
 ## 선택 방법
 
-| Scenario | Method |
+| 시나리오 | 방법 |
 | :---: | :---: |
-| No elevation required | Install the program |
-| No user available at the controlled end | Rename<br/>*or*<br/> Run with administrator |
-| User available at the controlled end<br/>*and*<br/> Immediate elevation when connected<br/>*and*<br/> Accept-via-click connection | Click `Accept and Elevate` when receiving the connection at the controlled end |
-| User available at the controlled end<br/>*and*<br/> Elevation as needed | Click `Elevate` on the connection management window at the controlled end<br/>*or*<br/> Request elevation at the control end |
+| 권한 상승 요청 필요 없음 | 프로그램 설치하기 |
+| 제어되는 쪽에 사용자가 없음 | 이름 바꾸기<br/>*또는*<br/> 관리자로 실행 |
+| 제어되는 쪽에 사용자가 있음<br/>*및*<br/> 연결 시 즉시 권한 상승<br/>*및*<br/> 클릭을 통한 연결 수락 | 제어되는 쪽에서 연결을 받을 때 `Accept and Elevate`을 클릭하세요 |
+| 제어되는 쪽에 사용자가 있음<br/>*및*<br/> 필요에 따라 권한 상승 | 제어되는 쪽의 연결 관리 창에서 `Elevate`을 클릭하세요<br/>*또는*<br/> 제어하는 쪽에서 권한 상승 요청 |

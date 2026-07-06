@@ -13,13 +13,13 @@ keywords: ["rustdesk smtp oauth2", "rustdesk smtp microsoft 365", "rustdesk smtp
 
 ## 어떤 값들이 RustDesk Pro에 들어가나요?
 
-| RustDesk Pro field | What to enter |
+| RustDesk Pro 필드 | 입력할 내용 |
 | --- | --- |
-| From | The sender address shown in outgoing mail. |
-| Mail Account | The mailbox address RustDesk uses as the XOAUTH2 SMTP username. |
-| OAuth2 Tenant ID | `Directory (tenant) ID` from the app overview |
-| OAuth2 Client ID | `Application (client) ID` from the app overview |
-| OAuth2 Client secret | The secret `Value` created under `Certificates & secrets` |
+| 보낸 사람 | 발신 메일에 표시되는 발신자 주소입니다. |
+| 메일 계정 | RustDesk가 XOAUTH2 SMTP 사용자 이름으로 사용하는 사서함 주소입니다. |
+| OAuth2 테넌트 ID | 앱 개요에서 `Directory (tenant) ID` |
+| OAuth2 클라이언트 ID | 앱 개요에서 `Application (client) ID` |
+| OAuth2 클라이언트 비밀번호 | `Certificates & secrets` 아래에서 생성된 비밀번호 `Value` |
 
 이 스크린샷은 이러한 값들이 RustDesk에서 어디에 입력되는지 보여줍니다:
 ![](/docs/en/self-host/rustdesk-server-pro/smtp/microsoft-365/images/21-RustDesk-SMTP-OAuth2-2.png)

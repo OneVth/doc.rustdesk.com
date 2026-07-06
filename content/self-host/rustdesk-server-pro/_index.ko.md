@@ -15,7 +15,7 @@ RustDesk Server Pro는 중앙 집중식 관리, 신원 통합 및 RustDesk 서�
 
 - 중앙 집중식 관리 기능, 신원 통합 또는 정책 제어가 필요할 때 Pro를 선택하세요.
 - 가장 빠르고 쉬운 배포를 위해 [Docker](/docs/ko/self-host/rustdesk-server-pro/installscript/docker/)로 시작하세요.
-- `systemd`와 스크립트된 리눅스 설정을 원한다면 [install.sh](/docs/ko/self-host/rustdesk-server-pro/installscript/script/)를 사용하세요.
+- `systemd`와 스크립트된 Linux 설정을 원한다면 [install.sh](/docs/ko/self-host/rustdesk-server-pro/installscript/script/)를 사용하세요.
 - [Windows install path](/docs/ko/self-host/rustdesk-server-pro/installscript/windows/)는 이전 버전으로 간주하세요.
 - 서버가 시작된 직후 HTTPS, 라이선스 및 클라이언트 구성에 대해 계획을 세우세요.
 

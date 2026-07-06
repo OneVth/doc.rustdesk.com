@@ -15,12 +15,12 @@ RustDesk의 고급 사용자 지정 클라이언트 설정과 각 설정이 서�
 
 ## 설정 우선순위는 어떻게 작동하나요?
 
-| Source | Priority |
+| 소스 | 우선순위 |
 | --- | --- |
-| Override | Highest |
-| Strategy | High |
-| User | Medium |
-| Default | Lowest |
+| 덮어쓰기 | 최고 |
+| 전략 | 높음 |
+| 사용자 | 보통 |
+| 기본값 | 가장 낮음 |
 
 ## 고급 설정 빠른 답변
 
@@ -442,7 +442,7 @@ ar, bg, ca, cs, da, de, el, en, eo, es, et, fa, fr, he, hr, hu, id, it, ja, ko, 
 1. **macOS** ~/Movies/**앱_이름**
 2. **Linux** ~/Videos/**앱_이름**
 3. **Windows** %USERPROFILE%\Videos\\**앱_이름**
-4. **안드로이드** /Storage/emulated/0/**앱_이름**/ScreenRecord
+4. **Android** /Storage/emulated/0/**앱_이름**/ScreenRecord
 
 **노트**: **앱_이름**을 현재 앱 이름으로 대체하십시오.
 
@@ -1157,7 +1157,7 @@ Android 플로팅 창에 아이콘이 설정되지 않은 경우 기본적으로
 
 ### 화면 켜기 유지
 
-이는 안드로이드 제어 측용입니다. 화면을 켜둔 상태로 유지하는 것은 플로팅 창에 의존합니다.
+이는 Android 제어 측용입니다. 화면을 켜둔 상태로 유지하는 것은 플로팅 창에 의존합니다.
 
 | Values | Default | Example |
 | :------: | :------: | :------: |
@@ -1209,7 +1209,7 @@ https://github.com/rustdesk/rustdesk/issues/7425
 
 사용자가 수신 세션을 수락하기 전에 수락 창(연결 관리 창)에서 권한을 변경할 수 있는지 여부를 제어합니다.
 
-데스크톱에서는 이 설정이 수락 창(연결 관리 창)의 모든 권한에 영향을 미칩니다. 안드로이드에서는 다음 권한에 영향을 미칩니다: 파일 전송, 오디오 캡처 및 클립보드 허용입니다. 화면 캡처와 입력 제어는 영향을 받지 않습니다.
+데스크톱에서는 이 설정이 수락 창(연결 관리 창)의 모든 권한에 영향을 미칩니다. Android에서는 다음 권한에 영향을 미칩니다: 파일 전송, 오디오 캡처 및 클립보드 허용입니다. 화면 캡처와 입력 제어는 영향을 받지 않습니다.
 
 **미리보기**: https://github.com/rustdesk/rustdesk/pull/14875
 

@@ -1,22 +1,22 @@
 ---
-title: 리눅스
-description: "Ubuntu, Fedora, CentOS, Arch, openSUSE, NixOS를 포함한 리눅스 배포판에 RustDesk를 설치하기. Wayland 참고사항, AppImage 및 Flatpak 옵션, SELinux 문제 해결 방법을 검토하세요."
+title: Linux
+description: "Ubuntu, Fedora, CentOS, Arch, openSUSE, NixOS를 포함한 Linux 배포판에 RustDesk를 설치하기. Wayland 참고사항, AppImage 및 Flatpak 옵션, SELinux 문제 해결 방법을 검토하세요."
 keywords: ["rustdesk linux", "rustdesk ubuntu", "rustdesk fedora", "rustdesk arch", "rustdesk appimage", "rustdesk flatpak", "rustdesk wayland", "rustdesk selinux"]
 weight: 4
 ---
 
-리눅스 가이드를 사용하여 주요 배포판에 RustDesk를 설치하고, Wayland 및 로그인 화면의 제한 사항을 검토하며, SELinux 정책 차단과 같은 일반적인 권한 문제를 해결하세요.
+Linux 가이드를 사용하여 주요 배포판에 RustDesk를 설치하고, Wayland 및 로그인 화면의 제한 사항을 검토하며, SELinux 정책 차단과 같은 일반적인 권한 문제를 해결하세요.
 
-## 어떤 리눅스 패키지를 사용해야 하나요?
+## 어떤 Linux 패키지를 사용해야 하나요?
 
-| Situation | Best package |
+| 상황 | 최적의 패키지 |
 | --- | --- |
-| Ubuntu or Debian-based systems | `.deb` |
-| Fedora or CentOS-based systems | `.rpm` |
-| Arch Linux or Manjaro | `.pkg.tar.zst` |
-| openSUSE | SUSE-specific `.rpm` |
-| Portable single-file usage | `AppImage` |
-| Sandboxed desktop install | `Flatpak` |
+| Ubuntu 또는 Debian 기반 시스템 | `.deb` |
+| Fedora 또는 CentOS 기반 시스템 | `.rpm` |
+| Arch Linux 또는 Manjaro | `.pkg.tar.zst` |
+| openSUSE | SUSE 전용 `.rpm` |
+| 휴대용 단일 파일 사용 | `AppImage` |
+| 샌드박스 데스크톱 설치 | `Flatpak` |
 
 ## Linux 빠른 답변
 
