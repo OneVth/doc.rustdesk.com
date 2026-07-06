@@ -6,35 +6,35 @@ description: "PowerShell, 배치 또는 macOS bash 스크립트를 사용하여 
 keywords: ["rustdesk client deployment", "rustdesk powershell deploy", "rustdesk mass deployment", "rustdesk intune", "rustdesk rmm", "rustdesk silent deployment"]
 ---
 
-이 안내서는 PowerShell, 배치 및 macOS bash와 같은 스크립트 및 자동화 도구를 사용한 대규모 RustDesk 클라이언트 배포를 다룹니다. 가장 간단한 경험을 원하고 RustDesk Server Pro가 있다면 사용자 지정 클라이언트 생성기부터 시작하세요: https://twitter.com/rustdesk/status/1788905463678951787.
+이 안내서는 PowerShell, 배치 및 macOS bash와 같은 스크립트 및 자동화 도구를 사용한 대규모 RustDesk 클라이언트 배포를 다룹니다. 가장 간단한 경험을 원하고 RustDesk Server Pro를 보유한 경우, 사용자 지정 클라이언트 생성기를 이용해 시작하세요: https://twitter.com/rustdesk/status/1788905463678951787.
 
-## RustDesk 클라이언트를 대규모로 배포하는 가장 좋은 방법은 무엇인가요?
+## 대규모로 RustDesk 클라이언트를 배포하는 가장 좋은 방법은 무엇인가요?
 
-RustDesk Server Pro의 경우, 가장 쉬운 대규모 배포 경로는 일반적으로 사용자 지정 클라이언트 생성기입니다. 이는 서버 설정을 클라이언트 빌드에 포함하기 때문입니다. RMM, Intune, GPO 또는 사용자 지정 자동화를 통해 관리되는 환경에서는 PowerShell, 배치 및 셸 스크립트가 더 유연합니다.
+RustDesk Server Pro의 경우, 서버 설정을 클라이언트 빌드에 포함시키기 때문에 사용자 지정 클라이언트 생성기가 일반적으로 가장 쉬운 대규모 배포 경로입니다. RMM, Intune, GPO 또는 사용자 지정 자동화를 통해 관리되는 환경에서는 PowerShell, 배치 및 셸 스크립트가 더 유연합니다.
 
-## 어떤 배포 방법을 선택해야 할까요?
+## 어떤 배포 방법을 선택해야 하나요?
 
-| 방법 | 최적의 사용처 | 사용하는 이유 |
+| 방법 | 가장 적합한 경우 | 사용하는 이유 |
 | --- | --- | --- |
-| 사용자 지정 클라이언트 생성기 | RustDesk Server Pro 팀 | 미리 설정된 옵션과 함께 가장 간편한 패키지 배포 |
+| 사용자 지정 클라이언트 생성기 | RustDesk Server Pro 팀 | 미리 로드된 설정과 함께 가장 간단한 패키지 배포 |
 | PowerShell | Windows 플릿 자동화 | RMM, Intune 및 스크립트 기반 설치에 적합 |
-| 배치 또는 cmd | 기본적인 Windows 스크립팅 | PowerShell 중심의 도구 없이도 간단한 Windows 환경에서 작동 |
-| MSI | 관리되는 Windows 소프트웨어 배포 | 이미 MSI 기반 패키징 워크플로를 사용하고 있을 때 더 적합 |
+| 배치 또는 cmd | 기본 Windows 스크립팅 | PowerShell 중심의 도구 없이 더 간단한 Windows 환경에서 작동 |
+| MSI | 관리되는 Windows 소프트웨어 배포 | 이미 MSI 기반 패키징 워크플로를 사용하는 경우 더 적합 |
 | macOS bash | Mac 플릿 배포 | macOS 호스트용 스크립트 가능한 설치 및 구성 |
 
 ## 배포 스크립트에는 어떤 입력이 필요합니까?
 
-대부분의 배포 스크립트는 다음 세 가지를 필요로 합니다:
+대부분의 배포 스크립트는 세 가지를 필요로 합니다:
 
 - RustDesk 구성 문자열
 - 관리자 또는 root 권한으로 실행할 수 있는 배포 방법
 - 무작위 또는 배포 시 명시적으로 설정된 비밀번호 정책
 
-여러 방법을 사용해 배포할 수 있으며, 일부 방법은 [클라이언트 구성](https://rustdesk.com/docs/en/self-host/client-configuration/)에 설명되어 있습니다.
+여러 방법을 사용해 배포할 수 있으며, 일부 방법은 [Client Configuration](https://rustdesk.com/docs/en/self-host/client-configuration/)에 설명되어 있습니다.
 
 또는 RMM, Intune 등과 함께 대량 배포 스크립트를 사용할 수도 있습니다. ID와 비밀번호는 스크립트에서 출력됩니다. 이를 수집하거나 ID와 비밀번호를 각각 다른 스크립트로 분리하여 수집해야 합니다.
 
-영구 비밀번호는 `rustdesk_pw` 뒤에 `()` 내부의 내용을 PowerShell용으로 선호하는 비밀번호로 변경하고, 다른 플랫폼용 해당 라인도 동일하게 변경함으로써 무작위에서 원하는 비밀번호로 변경할 수 있습니다.
+영구 비밀번호는 `rustdesk_pw` 이후 `()` 내부의 내용을 PowerShell용 선호하는 비밀번호로 변경하고, 기타 플랫폼의 경우 해당 라인을 변경함으로써 무작위에서 원하는 비밀번호로 변경할 수 있습니다.
 
 ## PowerShell
 
@@ -101,7 +101,6 @@ function getLatest()
 }
 
 $RustDeskOnGitHub = getLatest
-
 
 $rdver = ((Get-ItemProperty  "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RustDesk\").Version)
 
@@ -392,9 +391,9 @@ echo "..............................................."
 
 기본적으로 RustDesk 클라이언트는 처음 서버에 연결할 때 자체 호스팅된 서버에 등록됩니다. 일반 모드에서는 추가적인 배포 단계가 필요하지 않습니다.
 
-서버 웹 콘솔에서 **설정 → 기타 → 새 장치에 대한 배포 필요**를 활성화하면, 새 장치는 이 서버에 등록되기 전에 반드시 명시적으로 배포해야 합니다.
+서버 웹 콘솔에서 **설정 → 기타 → 새 장치에 대한 배포 요구**를 활성화하면, 새 장치는 이 서버에 등록되기 전에 반드시 명시적으로 배포되어야 합니다.
 
-관리자 계정으로 서버 웹 콘솔에서 [API 토큰](/docs/en/self-host/rustdesk-server-pro/console/#api-token)을 생성하세요. 해당 토큰은 **장치** 권한이 **읽기 및 쓰기**로 설정되어 있어야 합니다. 그런 다음 RustDesk를 설치하고 자체 호스팅된 서버를 사용하도록 구성한 후 각 새 데스크톱 장치에서 배포 명령을 실행하세요.
+관리자 계정으로 서버 웹 콘솔에서 [API token](/docs/ko/self-host/rustdesk-server-pro/console/#api-token)를 생성하세요. 해당 토큰은 **장치** 권한이 **읽기 및 쓰기**로 설정되어 있어야 합니다. 그런 다음 RustDesk를 설치하고 자체 호스팅된 서버를 사용하도록 구성한 후 각 새 데스크톱 장치에서 배포 명령을 실행하세요.
 
 ### Windows, macOS 및 Linux
 
@@ -404,7 +403,7 @@ Windows에서는 관리자 권한으로 명령 프롬프트 또는 PowerShell을
 rustdesk --deploy --token <api_token>
 ```
 
-macOS와 Linux에서는 `sudo` 명령을 실행하세요:
+macOS 및 Linux에서는 `sudo`와 함께 명령어를 실행하십시오:
 
 ```sh
 sudo rustdesk --deploy --token <api_token>
@@ -418,10 +417,10 @@ sudo rustdesk --deploy --token <api_token>
 rustdesk --deploy --token <api_token> --id <custom_id>
 ```
 
-이 ID가 이미 다른 기기에서 사용되고 있다면 배포가 실패하고 RustDesk는 해당 ID가 이미 사용 중이라고 보고합니다.
+ID가 이미 다른 기계에서 사용되고 있으면 배포가 실패하고 RustDesk는 해당 ID가 이미 사용 중이라고 보고합니다.
 
-### Android
+### 안드로이드
 
-Android는 명령줄 배포 과정을 사용하지 않습니다. 서버에서 배포가 필요하고 Android 클라이언트가 아직 배포되지 않은 경우, RustDesk는 **배포** 프롬프트를 표시합니다. **확인**을 탭하고 배포 대화상자에 API 토큰을 입력한 후, 선택적으로 사용자 지정 ID를 입력하세요. 또한 **설정 → 배포**에서 동일한 대화상을 수동으로 열 수도 있습니다.
+안드로이드는 명령줄 배포 흐름을 사용하지 않습니다. 서버가 배포를 요구하고 안드로이드 클라이언트가 아직 배포되지 않은 경우, RustDesk는 **배포** 프롬프트를 표시합니다. **확인**을 탭하고 배포 대화상자에 API 토큰을 입력한 다음, 선택적으로 사용자 지정 ID를 입력하세요. 또한 **설정 → 배포**에서 동일한 대화상자를 수동으로 열 수도 있습니다.
 
 배포가 성공하면 장치가 서버 장치 목록에 추가되고 클라이언트는 정상적으로 등록할 수 있습니다.

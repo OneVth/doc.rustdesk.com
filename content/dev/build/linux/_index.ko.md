@@ -1,11 +1,11 @@
 ---
 title: 리눅스
 weight: 10
-description: "필요한 시스템 패키지, vcpkg 종속성 및 Rust 툴체인을 사용하여 Linux에서 RustDesk를 빌드하십시오. cargo를 실행하기 전에 Ubuntu, Fedora 또는 Arch 기반 설정 단계를 따르십시오."
+description: "필요한 시스템 패키지, vcpkg 종속성 및 Rust 툴체인을 사용해 Linux에서 RustDesk를 빌드하십시오. cargo를 실행하기 전에 Ubuntu, Fedora 또는 Arch 기반 설정 단계를 따르십시오."
 keywords: ["build rustdesk linux", "rustdesk linux build", "rustdesk vcpkg linux", "rustdesk cargo run linux", "rustdesk ubuntu build"]
 ---
 
-이 안내서를 사용하여 Linux에서 RustDesk를 빌드하고, 필요한 패키지를 설치하며, `vcpkg`를 준비한 다음 소스에서 데스크톱 앱을 컴파일하십시오.
+이 안내서를 사용하여 Linux에서 RustDesk를 빌드하고, 필요한 패키지를 설치하고, `vcpkg`를 준비한 다음 소스에서 데스크톱 앱을 컴파일하십시오.
 
 ## Linux에서 빌드하기 전에 무엇이 필요합니까?
 
@@ -13,12 +13,12 @@ Linux에서 RustDesk를 빌드하려면 배포판의 시스템 개발 패키지�
 
 ## Linux 빌드 체크리스트
 
-- 배포판에 맞는 컴파일러와 데스크톱 종속성을 설치하십시오.
-- `vcpkg`를 클론하고 부트스트랩한 후, `VCPKG_ROOT`를 내보내십시오.
-- `rustup`로 Rust를 설치하고 cargo 환경을 로드하십시오.
-- 하위 모듈과 함께 RustDesk 리포지토리를 클론하십시오.
-- `libsciter-gtk.so`를 `target/debug`로 다운로드하십시오.
-- 프로젝트 루트에서 `cargo run`를 실행하십시오.
+- 배포판에 맞는 컴파일러와 데스크톱 종속성을 설치하세요.
+- `vcpkg`를 클론하고 부트스트랩한 다음, `VCPKG_ROOT`를 내보내세요.
+- `rustup`로 Rust를 설치하고 cargo 환경을 로드하세요.
+- 하위 모듈과 함께 RustDesk 리포지토리를 클론하세요.
+- `libsciter-gtk.so`를 `target/debug`로 다운로드하세요.
+- 프로젝트 루트에서 `cargo run`를 실행하세요.
 
 ## Linux에서 빌드하는 방법
 
@@ -52,7 +52,7 @@ export VCPKG_ROOT=$PWD/vcpkg
 vcpkg/vcpkg install --x-install-root="$VCPKG_ROOT/installed"
 ```
 
-### libvpx 수정하기 (Fedora용)
+### libvpx 수정(Fedora용)
 
 ```sh
 cd vcpkg/buildtrees/libvpx/src
@@ -65,7 +65,7 @@ cp libvpx.a $VCPKG_ROOT/installed/x64-linux/lib/
 cd
 ```
 
-### 빌드하기
+### 빌드
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

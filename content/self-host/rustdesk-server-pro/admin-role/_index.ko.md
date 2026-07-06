@@ -1,27 +1,27 @@
 ---
 title: 관리자 역할
 weight: 17
-description: "RustDesk Server Pro에서 관리자 역할을 사용하여 사용자, 장치, 정책, 제어 역할 및 기타 콘솔 리소스 전반에 걸쳐 범위 지정된 관리 권한을 위임하십시오."
+description: "RustDesk 서버 프로에서 관리자 역할을 사용하여 사용자, 장치, 전략(Strategy), 제어 역할 및 기타 콘솔 리소스에 대한 범위 지정된 관리 권한을 위임하십시오."
 keywords: ["rustdesk admin role", "rustdesk delegated admin", "rustdesk server pro permissions", "rustdesk role management", "rustdesk web console roles"]
 ---
 
-RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분적인 관리 접근 권한을 위임해야 할 때 관리자 역할을 사용하십시오.
+RustDesk 서버 프로에서 전체 관리자 권한을 부여하지 않고 부분적인 관리 접근 권한을 위임해야 할 때 관리자 역할을 사용하십시오.
 
-관리자 역할을 통해 관리자는 비관리자 사용자에게 부분적인 관리 권한을 위임할 수 있습니다. 다양한 범위 내의 사용자 및 장치뿐만 아니라 전역 리소스(예: 정책, 제어 역할 및 사용자 지정 클라이언트)에 대한 권한을 정의할 수 있습니다.
+관리자 역할을 통해 관리자는 비관리자 사용자에게 부분적인 관리 권한을 위임할 수 있습니다. 다양한 범위 내의 사용자 및 디바이스뿐만 아니라 전역 리소스(예: 정책, 제어 역할 및 사용자 지정 클라이언트)에 대한 권한을 정의할 수 있습니다.
 
 관리자 역할이 사용자에게 할당되면, 사용자는 부여된 권한에 따라 웹 콘솔에서 해당 페이지와 메뉴를 볼 수 있습니다.
 
-## 관리자 역할은 언제 사용해야 하나요?
+## 언제 관리자 역할을 사용해야 하나요?
 
-누군가 RustDesk 환경의 일부를 관리해야 하지만 완전한 관리자가 되지 않아야 할 때 관리자 역할을 사용하세요. 이는 헬프데스크 책임자, 지역 IT팀, 기기 소유자 또는 그룹 범위의 운영자에게 적합한 모델로, 이들은 전체 플릿의 일부만 관리해야 합니다.
+누군가가 전체 관리자가 되지 않고도 RustDesk 환경의 일부를 관리해야 할 때 관리자 역할을 사용하십시오. 이 모델은 헬프데스크 책임자, 지역 IT팀, 디바이스 소유자 또는 그룹 범위의 운영자에게 적합하며, 이들은 플릿의 일부만 관리해야 합니다.
 
-## 관리자 역할 빠른 답변
+## 관리자 역할에 대한 간단한 답변
 
 - 관리자 역할은 콘솔 관리 권한을 위임합니다.
 - 이는 전체 관리자 계정을 대체하지 않습니다.
-- 사용자는 동시에 여러 개의 관리자 역할을 가질 수 있습니다.
+- 한 사용자가 동시에 여러 개의 관리자 역할을 가질 수 있습니다.
 - 유효한 권한 집합은 할당된 모든 관리자 역할의 합집합입니다.
-- 관리가 선택된 그룹으로 제한되어야 하는 경우 그룹 범위 역할이 적합한 옵션입니다.
+- 관리가 선택된 그룹으로 제한되어야 할 경우 그룹 범위 역할이 적합합니다.
 
 ## 관리자 vs 관리자 역할
 
@@ -33,20 +33,20 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 관리자 역할은 세 가지 유형으로 나뉘며, 각각 다른 범위와 사용 가능한 권한을 갖습니다.
 
-| Type | Description |
+| 유형 | 설명 |
 |------|-------------|
-| **Global** | Can manage all resources across the entire team |
-| **Individual** | Can only manage the user's own devices and audit logs |
-| **Group Scoped** | Can manage users and devices within specified groups |
+| **전체** | 전체 팀의 모든 리소스를 관리할 수 있음 |
+| **개별** | 사용자의 자체 기기와 감사 로그만 관리할 수 있음 |
+| **그룹 범위** | 지정된 그룹 내의 사용자와 기기를 관리할 수 있음 |
 
 ### 그룹 범위 정보
 
-| Selected permissions | Applied to |
+| 선택됨 권한 | 적용 대상 |
 |-------|-------------|
-| **User Permissions** | Apply to users within the selected user groups |
-| **Device Permissions** | Apply to devices from: <ul><li>Selected device groups</li><li>Devices assigned to users within selected user groups</li><li>Unassigned devices (if enabled)</li></ul> |
+| **사용자 권한** | 선택된 사용자 그룹 내 사용자에 적용 |
+| **장치 권한** | 다음에서 장치에 적용: <ul><li>선택된 장치 그룹</li><li>선택된 사용자 그룹 내 사용자에게 할당된 장치</li><li>할당되지 않은 장치(활성화된 경우)</li></ul> |
 
-그룹 범위 역할에서는 사용자 권한 또는 장치 권한만 선택하여 권한과 범위를 더욱 명확히 할 수 있습니다. 예를 들어, 사용자 권한만 선택하면 어떤 장치 접근 권한 없이 사용자를 관리할 수 있으며, 장치 권한만 선택하면 사용자 그룹, 장치 그룹 또는 미할당 장치를 범위로 선택해 장치를 관리할 수 있습니다.
+그룹 범위 역할에서 사용자 권한 또는 장치 권한만 선택하여 권한과 범위를 보다 명확히 할 수 있습니다. 예를 들어, 사용자 권한만 선택하면 어떤 장치 접근 권한 없이 사용자를 관리할 수 있으며, 장치 권한만 선택하면 사용자 그룹, 장치 그룹 또는 미할당 장치를 범위로 선택하여 장치를 관리할 수 있습니다.
 
 ## 권한 규칙
 
@@ -56,7 +56,7 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 ### 편집 권한에는 할당이 포함되지 않습니다
 
-리소스(사용자 그룹, 장치 그룹, 전략(Strategy), 제어 역할)에 대한 편집 권한은 리소스 자체만 편집할 수 있도록 하며, 사용자나 장치에 할당할 수는 없습니다.
+리소스(사용자 그룹, 장치 그룹, 전략, 제어 역할)에 대한 편집 권한은 리소스 자체만 편집할 수 있도록 하며, 이를 사용자나 장치에 할당하는 것은 허용되지 않습니다.
 
 예를 들어, "장치 그룹 편집" 권한은 장치 그룹을 생성하고 수정할 수 있지만, 그룹에 장치를 추가하거나 제거하려면 "장치 그룹 업데이트" 권한이 필요합니다.
 
@@ -64,10 +64,10 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 리소스(사용자 그룹, 장치 그룹, 전략, 제어 역할)에 대한 보기 권한은 리소스 자체만 볼 수 있도록 하며, 그 안의 구성원을 볼 수는 없습니다.
 
-예를 들어, "장치 그룹 보기" 권한은 장치 그룹 목록을 볼 수 있도록 하지만, 그룹 내 장치를 보려면 "장치 보기" 권한 또는 어떤 장치 편집 권한이 필요합니다. 장치 권한이 글로벌인 경우 그룹의 모든 장치를 볼 수 있으며, 그룹 범위 또는 개별 권한인 경우 허용된 범위 내의 장치만 볼 수 있습니다.
+예를 들어, "디바이스 그룹 보기" 권한은 디바이스 그룹 목록을 볼 수 있도록 허용하지만, 그룹 내의 디바이스를 보려면 "디바이스 보기" 권한 또는 어떤 디바이스 편집 권한이 필요합니다. 디바이스 권한이 전역인 경우 그룹 내 모든 디바이스를 볼 수 있으며, 그룹 범위 또는 개별 권한인 경우 허용된 범위 내의 디바이스만 볼 수 있습니다.
 
 {{% notice note %}}
-주소록의 장치 읽기는 관리자 역할에 의해 제한되지 않습니다. 클라이언트의 액세스 가능한 장치 피어 탭은 콘솔의 **설정 → 기타 → 액세스 가능한 장치 가져오기 비활성화**에 의해서만 제어되며, 이 또한 관리자 역할에 의해 제한되지 않습니다.
+주소록의 디바이스 읽기는 관리자 역할에 의해 제한되지 않습니다. 클라이언트의 액세스 가능한 장치 피어 탭은 콘솔의 **설정 → 기타 → 액세스 가능한 장치 가져오기 비활성화**에 의해서만 제어되며, 관리자 역할에 의해 제한되지 않습니다.
 {{% /notice %}}
 
 ## 콘솔 작업
@@ -76,7 +76,7 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 1. **관리자 역할** 페이지로 이동하여 **생성**을 클릭하세요.
 2. 역할에 대한 **이름**을 입력하세요.
-3. **유형**을 선택하세요(그룹 범위의 경우, 범위도 구성하세요).
+3. **유형**을 선택하세요(그룹 범위인 경우 범위도 구성하세요).
 4. 부여할 **권한**을 선택하세요.
 
 ![](/docs/en/self-host/rustdesk-server-pro/admin-role/images/admin-role-create-name.png)
@@ -86,8 +86,8 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 사용자에게 관리자 역할을 할당하는 방법은 두 가지가 있습니다:
 
-1. **사용자 페이지** → 사용자에서 **편집**을 클릭한 후, **관리자 역할** 필드에서 역할을 선택하세요.
-2. **관리자 역할 페이지** → **사용자 수** 또는 **사용자 할당**을 클릭한 후, 역할에 사용자를 추가하거나 제거하세요.
+1. **사용자 페이지** → 사용자에서 **편집**을 클릭한 후 **관리자 역할** 필드에서 역할을 선택하세요.
+2. **관리자 역할 페이지** → **사용자 수** 또는 **사용자 할당**을 클릭한 후 역할에 사용자를 추가하거나 제거하세요.
 
 ![](/docs/en/self-host/rustdesk-server-pro/admin-role/images/admin-role-assign-user-page.png)
 ![](/docs/en/self-host/rustdesk-server-pro/admin-role/images/admin-role-assign-role-page.png)
@@ -138,15 +138,15 @@ RustDesk Server Pro에서 전체 관리자 권한을 부여하지 않고 부분�
 
 ### 개별 권한
 
-| Permission | Description |
+| 권한 | 설명 |
 |------------|-------------|
-| Devices-View | Read list information of the user's devices. |
-| Devices-Enable/Disable | Enable or disable the user's devices. |
-| Devices-Delete | Delete the user's devices. Devices must be disabled before they can be deleted. |
-| Devices-Edit Info | Edit device name, device username (system username of the device, not the RustDesk user), and note for the user's devices. |
-| Devices-Update Strategy | Change strategy of the user's devices. |
-| Audit Logs-View | Read personal logs. Can edit notes. Even when "Only admin can access logs" option is enabled. |
-| Audit Logs-Edit | Can disconnect personal active connections. |
+| 장치-보기 | 사용자의 장치 목록 정보를 읽습니다. |
+| 장치-활성화/비활성화 | 사용자의 장치를 활성화하거나 비활성화합니다. |
+| 장치-삭제 | 사용자의 장치를 삭제합니다. 장치를 삭제하려면 먼저 비활성화해야 합니다. |
+| 장치-정보 편집 | 사용자의 장치 이름, 장치 사용자 이름(장치의 시스템 사용자 이름이 아니라 RustDesk 사용자 이름), 및 노트를 편집합니다. |
+| 장치-전략 변경 | 사용자의 장치 전략을 변경합니다. |
+| 감사 로그-보기 | 개인 로그를 읽습니다. 노트를 편집할 수 있습니다. "관리자만 로그에 접근 가능" 옵션이 활성화된 경우에도 가능합니다. |
+| 감사 로그-편집 | 개인의 활성 연결을 연결 해제할 수 있습니다. |
 
 ### 그룹 범위 권한
 

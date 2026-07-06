@@ -1,7 +1,7 @@
 ---
 title: 제어 역할
 weight: 18
-description: "RustDesk Server Pro에서 제어 역할을 구성하여 연결이 연결된 후 원격 운영자가 수행할 수 있는 작업을 정의하십시오. 제어 역할을 접근 제어 및 전략(Strategy)과 비교하십시오."
+description: "RustDesk 서버 Pro에서 제어 역할을 구성하여 연결이 연결된 후 원격 운영자가 수행할 수 있는 작업을 정의하십시오. 제어 역할을 액세스 제어 및 전략(Strategy)과 비교하십시오."
 keywords: ["rustdesk control role", "rustdesk remote permissions", "rustdesk server pro control role", "rustdesk access control vs strategy", "rustdesk remote control policy"]
 ---
 
@@ -15,7 +15,7 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 ## 제어 역할에 대한 간단한 답변
 
-- 제어 역할은 연결 설정 후 세션 내 동작에 영향을 미칩니다.
+- 제어 역할은 연결 설정 후 세션 내 작업에 영향을 미칩니다.
 - 처음부터 연결이 허용되는지 여부를 결정하지 않습니다.
 - 각 사용자는 단 한 개의 제어 역할만 가질 수 있습니다.
 - 제어 역할 권한은 제어되는 장치의 로컬 권한 설정을 무시할 수 있습니다.
@@ -25,31 +25,31 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 **제어 역할 vs 접근 제어 vs 전략**
 
 - **제어 역할**: 연결 설정 후 제어하는 사용자가 수행할 수 있는 작업을 결정합니다.
-- **접근 제어**: 제어 장치와 제어되는 장치 간에 연결이 설정될 수 있는지를 결정합니다.
+- **접근 제어**: 제어 장치와 제어되는 장치 간에 연결을 설정할 수 있는지 여부를 결정합니다.
 - **전략**: 제어되는 장치의 설정을 수정합니다.
 {{% /notice %}}
 
 ## 요구 사항
 
-- 제어되는 장치: RustDesk **1.4.5** 이상 (안드로이드 제어 장치는 아직 지원되지 않습니다)
-- 제어하는 장치: 버전 요구 없음
+- 제어되는 장치: RustDesk **1.4.5** 이상 (Android 제어 장치는 아직 지원되지 않습니다)
+- 제어하는 장치: 버전 요구 사항 없음
 
 ## 권한 계산
 
 ### 권한 작동 방식
 
-간단히 말해: 제어 권한이 로컬 설정보다 우선합니다.
+간략히 말해: 제어 권한이 로컬 설정보다 우선합니다.
 
-권한 설정에는 두 가지 소스가 있습니다:
+권한 설정의 출처는 두 가지입니다:
 
 - **제어되는 쪽의 로컬 설정**: 제어되는 장치의 설정(설정 → 보안 → 권한)
-- **제어 권한**: 제어하는 사용자의 제어 역할 권한(웹 콘솔에서 구성)
+- **제어 권한**: 제어하는 사용자의 제어 역할 권한(웹 콘솔에서 구성됨)
 
 각 권한에는 세 가지 상태가 있습니다:
 
-- **클라이언트 설정 사용**: 오버라이드 없음, 제어되는 장치의 로컬 설정 사용
-- **활성화**: 해당 권한을 명시적으로 활성화(로컬 설정 무시)
-- **비활성화**: 해당 권한을 명시적으로 비활성화(로컬 설정 무시)
+- **클라이언트 설정 사용**: 오버라이드 없음, 제어되는 장치의 로컬 설정을 사용함
+- **활성화**: 이 권한을 명시적으로 활성화함(로컬 설정을 무시함)
+- **비활성화**: 이 권한을 명시적으로 비활성화함(로컬 설정을 무시함)
 
 권한은 세션 단위로 계산됩니다:
 
@@ -62,9 +62,9 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 | Use Client Settings | Enable | Enable |
 | Use Client Settings | Disable | Disable |
 
-**특수한 경우: 원격 구성 수정**
+**특수 사례: 원격 구성 수정**
 
-여러 제어 사용자가 동일한 장치에 연결된 경우, "원격 구성 수정" 권한은 모든 연결을 통틀어 계산됩니다:
+여러 제어 사용자가 동일한 장치에 연결되어 있을 때, '원격 구성 수정' 권한은 모든 연결을 통합하여 계산됩니다:
 
 | All Connections' Control Permission | Result |
 |---|---|
@@ -74,14 +74,14 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 ### 적용되는 역할
 
-각 사용자는 단 한 개의 제어 역할만 할당받을 수 있습니다. 기본 제공되는 두 가지 역할이 있습니다:
+각 사용자는 하나의 제어 역할만 할당받을 수 있습니다. 기본 제공 역할은 두 가지입니다:
 
-| Role | Description |
+| 역할 | 설명 |
 |------|-------------|
-| **Not Logged** | For controlling users who are not logged in. Cannot be assigned to users. |
-| **Default** | For logged-in controlling users who have no Control Role assigned, or are explicitly assigned to the Default role. |
+| **로그인하지 않음** | 로그인하지 않은 사용자를 제어하는 데 사용됩니다. 사용자에게 할당할 수 없습니다. |
+| **기본값** | 제어 역할이 지정되지 않았거나 명시적으로 기본값 역할에 할당된 로그인한 제어 사용자에게 사용됩니다. |
 
-적용되는 제어 역할은 제어하는 사용자의 로그인 상태와 역할 할당에 따라 달라집니다:
+상태에 따라 적용되는 제어 역할은 제어 사용자의 로그인 상태와 역할 할당에 따라 다릅니다:
 
 | Controlling User Status | Assigned Role | Which Role / Role Status | Applied Control Role |
 |---|---|---|---|
@@ -94,7 +94,7 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 ## 사용 가능한 권한
 
-제어 가능한 12가지 권한은 제어되는 장치의 설정 → 보안 → 권한에 해당합니다:
+제어 가능한 12가지 권한은 제어 대상 기기의 설정 → 보안 → 권한에 해당합니다:
 
 - 키보드/마우스
 - 원격 프린터
@@ -111,7 +111,7 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 
 ## 콘솔 작업
 
-### 역할 생성
+### 역할 생성하기
 
 1. **제어 역할** 페이지로 이동하여 **생성**을 클릭하세요.
 2. 역할에 대한 **이름**을 입력하세요.
@@ -120,16 +120,16 @@ RustDesk Server Pro에서 원격 세션 중에 사용자가 수행할 수 있는
 ![](/docs/en/self-host/rustdesk-server-pro/control-role/images/control-role-create-name.png)
 ![](/docs/en/self-host/rustdesk-server-pro/control-role/images/control-role-create-permission.png)
 
-### 역할 할당
+### 역할 할당하기
 
 사용자에게 제어 역할을 할당하는 방법은 두 가지가 있습니다:
 
-1. **사용자 페이지** → 사용자에서 **편집**을 클릭 → **제어 역할** 필드에서 역할을 선택하세요.
-2. **제어 역할 페이지** → **사용자 수** 또는 **사용자 할당**을 클릭 → 역할에 사용자를 추가하거나 제거하세요.
+1. **사용자 페이지** → 사용자에서 **편집**을 클릭한 후, **제어 역할** 필드에서 역할을 선택하세요.
+2. **제어 역할 페이지** → **사용자 수** 또는 **사용자 할당**을 클릭한 후, 역할에 사용자를 추가하거나 제거하세요.
 
 ![](/docs/en/self-host/rustdesk-server-pro/control-role/images/control-role-assign-user-page.png)
 ![](/docs/en/self-host/rustdesk-server-pro/control-role/images/control-role-assign-role-page.png)
 
 {{% notice note %}}
-"로그인 안 함" 역할은 사용자에게 할당할 수 없습니다(로그인하지 않은 연결에만 적용됨).
+"로그인하지 않음" 역할은 사용자에게 할당할 수 없습니다(로그인하지 않은 연결에만 적용됨).
 {{% /notice %}}

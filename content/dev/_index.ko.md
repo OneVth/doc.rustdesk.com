@@ -13,10 +13,10 @@ chapter: true
 
 | Need | Best guide |
 | --- | --- |
-| Start from the overall contributor build docs | [Build](/docs/en/dev/build/) |
-| Build the desktop app on Linux | [Linux build](/docs/en/dev/build/linux/) |
-| Build the desktop app on Windows | [Windows build](/docs/en/dev/build/windows/) |
-| Build the desktop app on macOS | [macOS build](/docs/en/dev/build/osx/) |
-| Fix common Windows build problems | [FAQ for Windows](/docs/en/dev/build/faq/) |
+| Start from the overall contributor build docs | [Build](/docs/ko/dev/build/) |
+| Build the desktop app on Linux | [Linux build](/docs/ko/dev/build/linux/) |
+| Build the desktop app on Windows | [Windows build](/docs/ko/dev/build/windows/) |
+| Build the desktop app on macOS | [macOS build](/docs/ko/dev/build/osx/) |
+| Fix common Windows build problems | [FAQ for Windows](/docs/ko/dev/build/faq/) |
 
 {{% children depth="3" showhidden="true" %}}
